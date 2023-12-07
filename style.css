@@ -1,0 +1,48 @@
+
+.container{
+    height: 400px;
+    width:500px;
+    box-shadow: 0 2px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: rgb(39, 165, 233);
+    padding: auto;
+    
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+}
+input{
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    width:auto
+}
+button{
+    padding: 10px;
+    background-color: #077bf0;
+    border-radius: 10px;
+}
+.scrolling-text{
+    animation: scrolltext 15s infinite;
+}
+@keyframes scrolltext {
+    100%{transform: translateX(0%);}
+    0%{transform: translateX(100%);}
+}
+.blinking-text{
+    animation: blinkText 2s infinite;
+}
+@keyframes blinkText {
+    0%,50%{opacity: 1;}
+    100%{opacity: 0;}
+}
